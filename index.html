@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Запис на шкільний захід</title>
+<style>
+body {
+font-family: Arial;
+background: #f3e8ff;
+padding: 25px;
+}
+form {
+background: white;
+max-width: 500px;
+margin: auto;
+padding: 25px;
+border-radius: 15px;
+}
+h1 {
+text-align: center;
+color: #8652a5;
+}
+input, select, textarea {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+box-sizing: border-box;
+border: 1px solid #c9a9dc;
+border-radius: 7px;
+}
+button {
+background: #9865b5;
+color: white;
+padding: 12px;
+border: none;
+border-radius: 8px;
+width: 100%;
+font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<form action="mailto:YOUR_EMAIL@example.com"
+method="post" enctype="text/plain">
+
+<h1>Запис на шкільний захід</h1>
+
+<p>Заповни форму для участі у нашому заході!</p>
+
+<label>Ім'я та прізвище:</label>
+<input type="text" name="Ім'я" required>
+
+<label>Клас:</label>
+<select name="Клас">
+<option>9 клас</option>
+<option>10 клас</option>
+<option>11 клас</option>
+</select>
+
+<label>Назва заходу:</label>
+<select name="Захід">
+<option>Шкільний концерт</option>
+<option>Спортивне свято</option>
+<option>Творчий конкурс</option>
+<option>Благодійний ярмарок</option>
+</select>
+
+<label>Дата участі:</label>
+<input type="date" name="Дата">
+
+<label>Електронна пошта:</label>
+<input type="email" name="Email" required>
+
+<label>Побажання та коментарі:</label>
+<textarea name="Коментар" rows="4"></textarea>
+
+<button type="submit">Надіслати заявку</button>
+
+</form>
+</body>
+</html>
